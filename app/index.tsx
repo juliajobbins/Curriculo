@@ -2,9 +2,8 @@ import { Text, View, StyleSheet } from "react-native";
 import { Image } from "expo-image"
 import { Ionicons } from "@expo/vector-icons"
 
-// npm install expo-image (usar este código no terminal)
 
-const foto = require("../assets/images/perfil.png")
+const foto = require("../assets/images/banana.png")
 
 export default function Index() {
   return (
@@ -14,26 +13,26 @@ export default function Index() {
       </View>
       <View style = {styles.containerConteudo}>
         <View style = {styles.containerNome}>
-          <Text style={styles.nome}>Márcio Nunes Sauro</Text>
+          <Text style={styles.nome}>Aninha Bananinhas</Text>
         </View>
         <Text style = {styles.linha}>
-          _______________________________________
+          ___________________________________________
         </Text>
         <View style = {styles.containerDados}>
-          <Ionicons name="star" size={24} color="white" />
-          <Text style = {styles.textoDados}>2 anos</Text>
+          <Ionicons name="person" size={24} color="white" />
+          <Text style = {styles.textoDados}>15 anos</Text>
         </View>
         <View style = {styles.containerDados}>
-          <Ionicons name="sunny" size={24} color="white" />
-          <Text style = {styles.textoDados}>marcinhodograu@gmail.com</Text>
+          <Ionicons name="mail" size={24} color="white" />
+          <Text style = {styles.textoDados}>aninhabananinhas@escola.pr.gov.br</Text>
         </View>
         <View style = {styles.containerDados}>
-          <Ionicons name="moon" size={24} color="white" />
-          <Text style = {styles.textoDados}>(42) 93859-5632</Text>
+          <Ionicons name="call" size={24} color="white" />
+          <Text style = {styles.textoDados}>(42) 99999-5555</Text>
         </View>
         <View style = {styles.containerDados}>
-          <Ionicons name="heart" size={24} color="white" />
-          <Text style = {styles.textoDados}>Orlando / Flórida</Text>
+          <Ionicons name="home" size={24} color="white" />
+          <Text style = {styles.textoDados}>Cidade das Bananinhas / BN</Text>
         </View>
       </View>
     </View>
@@ -45,16 +44,17 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: "center",
     alignItems: "center",
-    backgroundColor: "#e5989b"
+    backgroundColor: "#ffe7a7",
   },
   containerImg: {
     flex: 1,
     paddingTop: 60,
+    borderRadius: 150,
   },
   estiloFoto: {
-    width: 280,
-    height: 280,
-    borderRadius: 500,
+    width: 300,
+    height: 300,
+    borderRadius: 150,
   },
   containerConteudo: {
     flex: 1
@@ -64,7 +64,7 @@ const styles = StyleSheet.create({
   },
   nome: {
     fontSize: 40,
-    color: "white",
+    color: "#fff9ae",
     fontWeight: "bold",
   },
   linha:{
